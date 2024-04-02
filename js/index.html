@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/script.js"></script>
+    <title>Pokédex</title>
+</head>
+<body>
+    <main>
+        <img src="#" alt="pokemon" class="pokemon_image">
+
+        <h1 class="pokemon_data">
+            <span class="pokemon_number"></span> -
+            <span class="pokemon_name"></span>
+        </h1>
+
+        <form class="form">
+            <input
+                type="search"
+                class="input_search"
+                placeholder="Name or Number"
+                required
+            />
+        </form>
+
+        <div class="buttonPrev">
+            <button class="button btn-prev">Prev &lt</button>
+        </div>
+        <div class="buttonNext">
+            <button class="button btn-next">Next &gt</button>
+        </div>
+
+        <div class="ball" onclick="playSound()">
+            <img src="../images/speaker.png" alt="sound" class="pokemon_sound">
+            <audio id="pokemonCry" src="" type="audio/ogg"></audio>
+        </div>
+
+        <img src="../images/pokedex.png" alt="pokedex" class="pokedex">
+    </main>
+</body>
+</html>
